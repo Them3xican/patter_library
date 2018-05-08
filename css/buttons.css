@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.container{
+    width: 1366px;
+    height: 2300px;
+    border: 1px red solid;
+    top: 100px;
+    margin: 0 auto;
+}
+.title {
+    font-size: 55px;
+    font-family: sans-serif;
+    font-weight: 200;
+    left: 450px;
+    top: 50px;
+    
+}
+
+.bttn-holder {
+    width: 33.3333333333%;
+    background-color: lightgrey;
+    height: 300px;
+    display: block;
+    top: 150px;
+    margin: 0 auto;
+    margin-top: 25px;
+    
+    
+}
+
+.bttn {
+    width: 50%;
+    height: 50px;
+    border: 2px solid blue;
+    border-radius: 25px;
+    overflow: hidden;
+    left: 120px;
+    top: 125px;
+}
+
+.bttn-title{
+    font-size: 22px;
+    font-weight: 600;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    left: 35px;
+    top: 15px;
+}
+.arrow{
+    border: 2px solid #000;
+  border-width: 0 0 4px 4px;
+  width: 15px;
+  height: 15px;
+  line-height: 0;
+  font-size: 0;
+    left: 45%;
+    top: -8px;    
+    transition: 0.5s;
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+    display: none;    
+    animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-name: scroll;
+}
+.bttn1:hover{
+    transition: 0.5s;
+}
+.bttn1:hover .arrow {
+    display: block;
+    transition: 0.5s;
+}
+@keyframes scroll {
+  0% {
+    opacity: 0;
+    transform: rotate(-135deg) translateX(0); 
+  }
+  100% {
+    opacity: 1;
+       transform:translateX(80px)rotate(-135deg);
+  }
+}
+
+.bttn2::before{
+    content: 'Click this button!';
+  width:100%;
+    position: absolute;
+    text-align: center;
+  transition: ease 0.2s;
+  bottom:0;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    top: 15px;
+}
+.bttn2:hover::before{
+  content: 'Yeah!';
+}
+
+.title-holder {
+    width: 600px;
+    height: 75px;
+    right: 200px;
+}
+    .title-holder:active{
+        animation-duration: 1.2s;
+  animation-fill-mode: both;
+  animation-name: bye;
+        background-color: green;
+    }
+     
+}
+.title-holder .bttn-title {
+    display: inline-block;
+}
+.showing {
+    left: 275px;
+    top: -10px;
+}
+.hidden {
+    left: 75px;
+}
+@keyframes bye{
+  0% {
+    opacity: 1;
+    transform:  translateX(0); 
+  }
+  100% {
+    opacity: 1;
+       transform:translateX(180px);
+  }
+
+}
+
+.bttn-container{
+    width: 100px;
+    height: 100px;
+    left: 150px;
+    top: 95px;
+    cursor: pointer;
+}
+
+.top, .bttm{
+    width: 100px;
+    height:12px;
+    background-color: red;
+    top: 10px;
+    margin-top: 10px;
+    list-style: none;
+    display: block;
+    transition: 0.25s;
+}
+
+.mid {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: white;    
+    list-style: none;
+    top: 15px;
+    left: 12px;
+    transition: 3s;
+}
+
+.bttn-container:hover .mid{
+    display: none;
+    transition: 3s;
+    
+}
+    
+.bttn-container:hover .top{
+    transform: rotate(45deg);
+    transition: 0.25s;
+    top: 15px;
+}
+
+.bttn-container:hover .bttm{
+    transform: rotate(-45deg);
+    transition: 0.25s;
+    top: -5px;
+}
+
+.boxes{
+    width: 50%;
+    height: 300px;
+    float: left;
+    overflow: hidden;
+}
+
+.left {
+    border-right: 5px black solid;
+}
+
+.right{
+ width: 45%;
+}
+
+.option{
+    width: 200px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 25px;
+    right: 170px;
+     animation-duration: .25s;
+  animation-fill-mode: both;
+  animation-name: left;
+}
+
+.option:hover{
+    transform:translateX(100px);
+    transition: 0.25s
+}
+
+
+.opt1 {
+     border: 2px solid white;
+}
+
+.opt2{
+     border: 2px solid black;
+}
+.opt3{
+     border: 2px solid darkgrey;
+}
+.opt4{
+     border: 2px solid purple ;
+}
+
+.opt-header {
+    left: 85px;
+    font-size: 18px;
+}
+
+.bttn-circle{
+    width: 200px;
+    height: 100px;
+    border-radius: 25px;
+    border: 1px red solid;
+    transition: .25s;
+    left: 150px;
+    top: 100px;
+}
+
+.bttn-circle:hover{
+    width: 100px;
+    height: 100px;
+    left: 160px;
+    border-radius: 100px;
+    transition: .25s;
+}
+
+.bttn-circle:hover .hide{
+    display: none;
+}
+
+.bttn-circle img {
+    width: 50%;
+    display: none;
+    left: 25px;
+    top: 25px;
+    transition: .25s
+}
+
+.bttn-circle:hover img {
+    display: block;
+    transition: .25s;
+}

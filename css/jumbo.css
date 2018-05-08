@@ -1,0 +1,42 @@
+*{
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+}
+.container {
+    width: 1366px;
+    height: 700px;
+    border: 1px red solid;
+    top: 100px;
+    
+}
+
+.jombotron {
+    width: 100%;
+    height: 200px;
+   background-color: lightgrey;
+    border-radius: 20px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 3;
+     border-radius: 20px;
+}
+
+.txt{
+    width: 50%;
+    height: 100px;
+    top: 50px;
+    text-align: center;
+}
+
+.txt h1 {
+    color: white;
+    font-size: 45px;
+    font-weight: 300;
+    font-family: sans-serif;
+    top: 30px;
+}

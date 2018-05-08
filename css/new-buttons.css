@@ -1,0 +1,348 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    color: white;
+      font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 1366px;
+    height: 4000px;
+    margin: 0 auto;
+       background-color: #313133;
+}
+
+.header {
+    height: 225px;
+    text-align: center;
+ 
+}
+
+.header .logo-holder {
+    height: 300px;
+    top: 25px;
+}
+
+.header .logo-holder .logo {
+    width: 85%;
+}
+
+.header .title-holder {
+    height: 300px;
+    
+}
+
+.header .title-holder .title {
+    font-size: 46px;
+    font-weight: 400;
+    top: 100px;  
+    left: 0;
+}
+
+.header .title-holder .tag-line {
+    font-size: 26px;
+    font-weight: 300;
+    top: 110px;
+   
+}
+
+.section {
+    top: 50px;
+}
+
+.code {
+    left: 525px;
+}
+
+.info {
+    height: 350px;
+    top: 20px;
+    left: 100px;
+}
+
+.info p {
+    font-size: 22px;
+    font-weight: 300;
+    width: 75%;
+    top: 75px;  
+}
+
+.info b {
+    color: #e16036;
+    text-transform: uppercase;
+}
+
+
+.bttn-holder {
+    top: 20px;
+    left: 150px;
+    float: left;
+    height: 350px;
+}
+
+
+.bttn {
+    width: 50%;
+    height: 50px;
+    border: 2px solid #e16036;
+    border-radius: 25px;
+    overflow: hidden;
+    left: 0px;
+    top: 125px;
+}
+
+/* button 1 */
+
+.bttn-title{
+    font-size: 22px;
+    font-weight: 600;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    left: 35px;
+    top: 15px;
+}
+.arrow{
+    border: 2px solid #e16036;
+  border-width: 0 0 4px 4px;
+  width: 15px;
+  height: 15px;
+  line-height: 0;
+  font-size: 0;
+    left: 20%;
+    top: -8px;    
+    transition: 0.5s;
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+    display: none;    
+    animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-name: scroll;
+}
+.bttn1:hover{
+    transition: 0.5s;
+}
+.bttn1:hover .arrow {
+    display: block;
+    transition: 0.5s;
+}
+@keyframes scroll {
+  0% {
+    opacity: 0;
+    transform: rotate(-135deg) translateX(0); 
+  }
+  100% {
+    opacity: 1;
+       transform:translateX(80px)rotate(-135deg);
+  }
+}
+
+
+/* button 2 */
+
+.bttn2::before{
+    content: 'Click this button!';
+  width:100%;
+    position: absolute;
+    text-align: center;
+  transition: ease 0.2s;
+  bottom:0;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    top: 10px;
+}
+.bttn2:hover::before{
+  content: 'Yeah!';
+   
+}
+
+/* button 3 */
+
+.title-holder {
+    width: 600px;
+    height: 75px;
+    right: 225px;
+    top: 2px;
+}
+    .title-holder:active{
+        animation-duration: 1.2s;
+  animation-fill-mode: both;
+  animation-name: bye;
+    }
+     
+}
+.title-holder .bttn-title {
+    display: inline-block;
+}
+.showing {
+    left: 275px;
+    top: -10px;
+}
+.hidden {
+    left: 75px;
+}
+@keyframes bye{
+  0% {
+    opacity: 1;
+    transform:  translateX(0); 
+  }
+  100% {
+    opacity: 1;
+       transform:translateX(180px);
+  }
+
+}
+
+/* button 4 */
+
+.bttn-container{
+    width: 100px;
+    height: 100px;
+    left: 0px;
+    top: 95px;
+    cursor: pointer;
+}
+
+.top, .bttm{
+    width: 100px;
+    height:12px;
+    background-color: #e16036;
+    top: 10px;
+    margin-top: 10px;
+    list-style: none;
+    display: block;
+    transition: 0.25s;
+}
+
+.mid {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: white;    
+    list-style: none;
+    top: 15px;
+    left: 12px;
+    transition: 3s;
+}
+
+.bttn-container:hover .mid{
+    display: none;
+    transition: 3s;
+    
+}
+    
+.bttn-container:hover .top{
+    transform: rotate(45deg);
+    transition: 0.25s;
+    top: 15px;
+}
+
+.bttn-container:hover .bttm{
+    transform: rotate(-45deg);
+    transition: 0.25s;
+    top: -5px;
+}
+
+/* button 5 */
+
+.boxes{
+    width: 50%;
+    height: 300px;
+    float: left;
+    overflow: hidden;
+}
+
+.left {
+    border-right: 5px #e16036 solid;
+}
+
+.right{
+ width: 45%;
+}
+
+.option{
+    width: 200px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 25px;
+    right: 170px;
+     animation-duration: .25s;
+  animation-fill-mode: both;
+  animation-name: left;
+}
+
+.option:hover{
+    transform:translateX(100px);
+    transition: 0.25s
+}
+
+
+.opt1 {
+     border: 2px solid white;
+}
+
+.opt2{
+     border: 2px solid black;
+}
+.opt3{
+     border: 2px solid darkgrey;
+}
+.opt4{
+     border: 2px solid purple ;
+}
+
+.opt-header {
+    left: 85px;
+    font-size: 18px;
+}
+
+
+/* button 6 */
+
+
+.bttn-circle{
+    width: 200px;
+    height: 100px;
+    border-radius: 25px;
+    border: 4px #e16036 solid;
+    transition: .25s;
+    left: 0px;
+    top: 100px;
+}
+
+.bttn-circle h1 {
+    top: 40px;
+    left: 40px;
+}
+
+.bttn-circle:hover{
+    width: 100px;
+    height: 100px;
+    left: 0px;
+    border-radius: 100px;
+    transition: .25s;
+}
+
+.bttn-circle:hover .hide{
+    display: none;
+}
+
+.bttn-circle img {
+    width: 50%;
+    display: none;
+    left: 0px;
+    top: 25px;
+    transition: .25s
+}
+
+.bttn-circle:hover img {
+    display: block;
+    transition: .25s;
+}
+
+
+
