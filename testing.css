@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #ccc;
+}
+
+.nav-bar .navbar-list {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bar .navbar-list li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  text-align: left;
+    width: 130px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    display: inline-block;
+    margin-right: -4px;
+    text-align: center;
+}
+
+.nav-bar .navbar-list li a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding-left: 15px;
+  border-bottom: 1px solid #888;
+  transition: .3s background-color;
+    border-bottom: none;
+    padding-left: 0;
+}
+
+.nav-bar a:hover {
+  background-color: #005f5f;
+}
+
+.nav-bar a.active {
+  background-color: #aaa;
+  color: #444;
+  cursor: default;
+}
+
+/* Sub Menus */
+.nav-bar .hidden-sub .sub-list {
+  font-size: .8em;
+}
+
+.nav-bar .hidden-sub .sub {
+    position: absolute;
+    padding: 0;
+    width: inherit;
+    
+  }
+
+  .nav-bar .hidden-sub:hover .sub {
+    display: block;
+    
+  }
+
+ .nav-bar .hidden-sub .sub .sub-list {
+    display: block;
+  }
+

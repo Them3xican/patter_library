@@ -1,14 +1,72 @@
-*{
-    position: relative;
-    margin: 0 auto;
-    padding: 0;
+.header {
+    height: 225px;
+    text-align: center;
+ 
 }
-.container {
-    width: 1366px;
-    height: 700px;
-    border: 1px red solid;
-    top: 100px;
+
+.header .logo-holder {
+    height: 300px;
+    top: 25px;
+}
+
+.header .logo-holder .logo {
+    width: 85%;
+}
+
+.header .title-holder {
+    height: 300px;
     
+}
+
+.header .title-holder .title {
+    font-size: 46px;
+    font-weight: 400;
+    top: 100px;  
+    left: 0;
+}
+
+.header .title-holder .tag-line {
+    font-size: 26px;
+    font-weight: 300;
+    top: 110px;
+}
+
+.header .title-holder a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 300;
+    top: 125px; 
+}
+
+.header .title-holder a:hover {
+    color: #e16036;
+}
+
+
+.section {
+    top: 50px;
+}
+
+.code {
+    top: 50px;
+}
+
+.info {
+    height: 350px;
+    top: 0
+    
+}
+
+.info p {
+    font-size: 22px;
+    font-weight: 300;
+    width: 75%;
+    top: 75px;  
+}
+
+.info b {
+    color: #e16036;
+    text-transform: uppercase;
 }
 
 .jombotron {
